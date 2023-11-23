@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+.navbar-container {
+    text-shadow: 0 0 5px $color-dark, 0 0 10px $color-two, 0 0 15px $color-dark;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+// Media query
+
+@media only screen and (max-width: 338px) {
+    .navbar-brand {
+      font-size: 26px; 
+    }
+  
+    .nav-link {
+      font-size: 18px; 
+    }
+  }
+
+  @media only screen and  (min-width: 575px) and (max-width: 768px) {
+    .navbar-brand {
+        font-size: 20px; 
+      }
+
+      .nav-link {
+        font-size: 18px; 
+      }
+
+}

@@ -1,0 +1,20 @@
+@import '../../../styles/settings.scss';
+
+.alert {
+    color: $color-one;
+    border: 1px solid $color-dark;
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    margin-bottom: 40px;
+}
+
+// Media query
+
+@media only screen and (max-width: 767px) {
+    .alert {
+        width: 300px;
+        font-size: 16px;
+    }
+}

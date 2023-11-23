@@ -1,0 +1,55 @@
+@import '../../../styles/settings.scss';
+
+.photoContainer {
+    position: relative;
+}
+
+.photoImage {
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.photoWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.removePhotoWrapper {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: $color-four;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removePhoto {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    padding: 1px;
+
+    &:hover {
+        color: $color-seven;
+    }
+}
+
+.formGroup {
+    margin-bottom: 20px;
+}
+
+// Media query
+
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+    .submitButton {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        display: block;
+    }
+}

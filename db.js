@@ -5,10 +5,7 @@ const connectToDB = () => {
     // Connecting to MongoDB
     let dbUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.54lfkap.mongodb.net/adsDB?retryWrites=true&w=majority`;
 
-    mongoose.connect(dbUri, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    });
+    mongoose.connect(dbUri);
     
     const db = mongoose.connection;
 
@@ -21,7 +18,7 @@ const connectToDB = () => {
         console.error('Error connecting to MongoDB:', err);
     });
 
-    return dbUri; // Вернуть dbUri из функции
+    return dbUri;
 };
 
 module.exports = connectToDB;

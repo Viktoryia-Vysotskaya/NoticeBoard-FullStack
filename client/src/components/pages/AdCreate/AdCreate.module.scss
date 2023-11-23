@@ -1,0 +1,36 @@
+@import '../../../styles/settings.scss';
+
+.alert {
+    background-color: $color-seven; 
+    color: $color-six; 
+    border: 1px solid $color-dark; 
+    border-radius: 4px; 
+    text-align: center; 
+    margin: 0 auto; 
+    width: 500px;
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+}
+
+.alert:hover {
+    transform: scale(1.05); 
+}
+
+.createAdTitle {
+    color: $color-one; 
+    margin-bottom: 40px;
+}
+
+// Media query
+
+@media only screen and (max-width: 767px) {
+    .alert {
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .createAdTitle {
+        text-align: center;
+    }
+}
+

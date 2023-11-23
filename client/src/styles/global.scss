@@ -1,0 +1,8 @@
+@import '../styles/settings.scss';
+
+body {
+    background: linear-gradient(to right, $color-light, $color-four);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}

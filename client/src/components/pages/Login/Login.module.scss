@@ -1,0 +1,35 @@
+@import '../../../styles/settings.scss';
+
+.alert {
+    text-align: center;
+}
+
+.title {
+    color: $color-one;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.formLabel {
+    color: $color-one;
+}
+
+.buttonSubmit {
+    margin-top: 30px;
+}
+
+// Media query
+
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+    .buttonSubmit {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .title {
+        text-align: center;
+    }
+}

@@ -1,0 +1,74 @@
+@import '../../../styles/settings.scss';
+
+.alert {
+    text-align: center;
+}
+
+.title {
+    color: $color-one;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.formLabel {
+    color: $color-one;
+}
+
+.avatarContainer {
+    position: relative;
+}
+
+.avatarImage {
+    width: 200px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.avatarWrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.removeAvatarWrapper {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: $color-four; 
+    width: 20px; 
+    height: 20px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.removeAvatar {
+    font-size: 20px;
+    cursor: pointer;
+    margin: 1px;
+    padding: 1px;
+
+    &:hover {
+        color: $color-seven;
+    }
+}
+
+.buttonSubmit {
+    margin-top: 30px;
+}
+
+// Media query
+
+@media only screen and (min-width: 310px) and (max-width: 768px) {
+    .buttonSubmit {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        display: block;
+    }
+
+    .title {
+        text-align: center;
+    }
+}

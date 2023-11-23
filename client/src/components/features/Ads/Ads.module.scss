@@ -1,0 +1,32 @@
+@import '../../../styles/settings.scss';
+
+.icon_col {
+    text-align: end;
+    align-self: center;
+}
+
+.alert {
+    border: 1px solid $color-dark;
+    border-radius: 4px;
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+// Media query
+
+@media only screen and (max-width: 767px) {
+    .inputSearch ::placeholder {
+        font-size: 75%;
+    }
+
+    .buttonSearch {
+        font-size: 10px;
+    }
+
+    .alert {
+        width: 270px;
+        font-size: 16px;
+    }
+}

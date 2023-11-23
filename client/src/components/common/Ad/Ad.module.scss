@@ -1,0 +1,121 @@
+@import '../../../styles/settings.scss';
+
+.section_left {
+    display: flex;
+    justify-content: flex-end;
+    width: 450px;
+    height: 450px;
+    margin-left: 135px;
+
+    .img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        padding: 0 10px 0 10px;
+        align-content: center;
+    }
+}
+
+.section_right {
+    margin-left: 234px;
+    display: flex;
+    flex-flow: column;
+
+    span {
+        font-weight: bold;
+        color: $color-one;
+    }
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+    color: $color-one;
+    word-wrap: break-word;
+}
+
+.localization {
+    word-wrap: break-word;
+}
+
+.content {
+    word-wrap: break-word;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+    align-items: center;
+
+    .singleLine {
+        white-space: nowrap;
+    }
+
+    .info {
+        font-weight: bold;
+        color: $color-one;
+    }
+}
+
+.avatar_frame {
+    .avatar {
+        max-width: 90px;
+        max-height: 90px;
+    }
+}
+
+.modal-dialog {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.modal-title {
+    color: $color-eight;
+    padding-left: 40px;
+}
+
+.modal-body {
+    color: $color-one;
+    font-size: 14px;
+    text-align: center;
+}
+
+.cancel-button {
+    color: $color-light;
+    background-color: $color-two;
+}
+
+.remove-button {
+    color: $color-light;
+    background-color: $color-seven;
+}
+
+//Media query
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .section_left {
+        width: 100%; 
+        height: 200px;
+        text-align: center; 
+        margin-left: 0; 
+        margin-bottom: 40px;
+    }
+
+    .section_left .img {
+        width: 100%; 
+        height: 200px; 
+    }
+
+    .section_right {
+        margin-left: 0;
+    }
+
+    .avatar_frame {
+        margin-right: 10px;
+    }
+
+    .user {
+        font-size: 14px;
+    }
+}

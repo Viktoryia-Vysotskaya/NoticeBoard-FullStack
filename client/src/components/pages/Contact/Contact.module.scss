@@ -1,0 +1,53 @@
+@import '../../../styles/settings.scss';
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    margin-top: 100px;
+    font-size: 30px;
+
+    p {
+        font-weight: 600;
+        margin-bottom: 40px;
+    }
+
+    .element {
+        font-size: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-shadow: 0 0 2px $color-one, 0 0 6px $color-two, 0 0 10px $color-one;
+
+        .icon {
+            font-size: 30px;
+            margin-right: 30px;
+            color: $color-one;
+        }
+
+        a {
+            text-decoration: none;
+            color: $color-dark;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: $color-light;
+        }
+    }
+}
+
+// Media query
+
+@media only screen and (min-width: 310px) and (max-width: 1400px) {
+    .container {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+
+        .element {
+            font-size: 16px;
+            text-align: left;
+        }
+    }
+}
