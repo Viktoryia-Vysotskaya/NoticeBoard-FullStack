@@ -3,7 +3,7 @@
 ➱ Simple Notice Board / Full Stack
 
 
-💻 Live demo: 
+💻 Live demo: https://noticeboard-fullstack.viktoryiavysots.repl.co
 
 (!) Free hosting so might take a while to load for first time.
 
