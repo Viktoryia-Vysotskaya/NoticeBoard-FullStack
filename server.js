@@ -34,6 +34,7 @@ app.use(
     cors({
         origin: [
             'http://localhost:3000',
+            'https://noticeboard-fullstack.viktoryiavysots.repl.co',
         ],
         credentials: true,
     })
