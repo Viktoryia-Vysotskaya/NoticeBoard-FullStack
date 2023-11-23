@@ -19,6 +19,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use((req, res, next) => {
+    res.setHeader('Content-Security-Policy', "img-src 'self' data: blob:");
+    next();
+});
+
+app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
     next();
 });
