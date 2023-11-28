@@ -4,6 +4,7 @@ import { Alert, Button, Spinner, Form, InputGroup } from "react-bootstrap";
 import { FiEye, FiEyeOff, FiX } from "react-icons/fi";
 
 import { AUTH_URL } from "../../../configs/config";
+import { validatePassword } from "../../../utils/validatePassword";
 import styles from "./Register.module.scss";
 
 const Register = () => {
@@ -17,24 +18,6 @@ const Register = () => {
   const [previewAvatar, setPreviewAvatar] = useState(null);
   const [status, setStatus] = useState(null); // 'success' ||'clientError' ||'serverError' ||'loginError' ||'loading'
   const [passwordError, setPasswordError] = useState(null);
-
-  const validatePassword = (password) => {
-    const minLength = 6;
-
-    if (password.length < minLength) {
-      return `Password must be at least ${minLength} characters long!`;
-    }
-
-    if (!/[A-Z]/.test(password)) {
-      return "Password must contain at least one uppercase letter!";
-    }
-
-    if (!/\d/.test(password)) {
-      return "Password must contain at least one digit!";
-    }
-
-    return null;
-  };
 
   const handleChangePassword = (e) => {
     const newPassword = e.target.value;
