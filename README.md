@@ -3,7 +3,7 @@
 ➱ Simple Notice Board / Full Stack
 
 
-💻 Live demo: https://34f371a5-80cd-459b-bef8-7b39d22f20f2-00-ny4owckm7ius.picard.replit.dev
+💻 Live demo: https://notice-board-full-stack-viktoryiavysots.replit.app
 
 (!) Free hosting so might take a while to load for first time.
 
