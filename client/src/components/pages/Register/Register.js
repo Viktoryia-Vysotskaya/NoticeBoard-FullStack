@@ -4,7 +4,6 @@ import { Alert, Button, Spinner, Form, InputGroup } from "react-bootstrap";
 import { FiEye, FiEyeOff, FiX } from "react-icons/fi";
 
 import { AUTH_URL } from "../../../configs/config";
-import { validatePassword } from "../../../utils/validatePassword";
 import styles from "./Register.module.scss";
 
 const Register = () => {
