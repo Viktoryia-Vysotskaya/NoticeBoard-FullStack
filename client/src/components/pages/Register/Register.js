@@ -16,12 +16,9 @@ const Register = () => {
   const [avatar, setAvatar] = useState(null);
   const [previewAvatar, setPreviewAvatar] = useState(null);
   const [status, setStatus] = useState(null); // 'success' ||'clientError' ||'serverError' ||'loginError' ||'loading'
-  const [passwordError, setPasswordError] = useState(null);
 
   const handleChangePassword = (e) => {
-    const newPassword = e.target.value;
-    setPassword(newPassword);
-    setPasswordError(validatePassword(newPassword));
+    setPassword(e.target.value);
   };
 
   const handleAvatarChange = (e) => {
@@ -46,12 +43,8 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Password verification
-    const passwordError = validatePassword(password);
-    if (passwordError) {
-      // Setting up a password error
-      setPasswordError(passwordError);
-      // Set the status to "clientError"
+    // Client-side validation (если хочешь, можно сюда добавить проверки)
+    if (!login || !password || !phone) {
       setStatus("clientError");
       return;
     }
@@ -149,14 +142,6 @@ const Register = () => {
             )}
           </InputGroup.Text>
         </InputGroup>
-        <Form.Control.Feedback type="invalid">
-          {status === "clientError" && passwordError}
-        </Form.Control.Feedback>
-        {status === "clientError" && passwordError && (
-          <Form.Text className={`text-muted ${styles.smallText}`}>
-            {passwordError}
-          </Form.Text>
-        )}
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formPhone">
